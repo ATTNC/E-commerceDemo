@@ -22,12 +22,12 @@ public class Main {
         GoogleService googleService = new GoogleManagerAdapter();
 
         userManager.add(user1, users);
-        userManager.loginWithGoogle(user1);
+        userManager.loginWithGoogle(user1); // Kullanıcı 1 için google ile kayıt olmayı simüle ediyoruz.
 
         userManager.add(user2, users);
-        userManager.login(user2);
+        userManager.login(user2);        // Kullanıcı 2 için hibernate ile kayıt olmayı simüle ediyoruz.
 
-        userManager.add(user3, users);
+        userManager.add(user3, users);  // Kullanıcı 1 ile aynı emaili verdik çıktı olarak hata almayı bekliyoruz.
 
 
     }
